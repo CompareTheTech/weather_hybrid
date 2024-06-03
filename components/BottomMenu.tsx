@@ -1,6 +1,5 @@
 import { ScrollView, StyleSheet, TouchableOpacity, View } from 'react-native';
 import { observer } from 'mobx-react';
-import { Text } from '@rneui/themed';
 import { useEffect, useState } from 'react';
 import { Link } from 'expo-router';
 import RightArrowIcon from '@/components/icons/RightArrowIcon';
@@ -9,6 +8,7 @@ import { useStore } from '@/store';
 import { HourlyWeatherModel } from '@/interfaces/hourlyWeatherModel';
 import WeatherTimeCard, { WeatherTimeCardProps } from '@/components/WeatherTimeCard';
 import { format } from 'date-fns';
+import TextRegular from '@/components/Text/TextRegular';
 
 const BottomMenu = observer(() => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
@@ -18,15 +18,19 @@ const BottomMenu = observer(() => {
       <View style={styles.header}>
         <View style={styles.tabs}>
           <TouchableOpacity onPress={() => setActiveTabIndex(0)}>
-            <Text style={[styles.tab, activeTabIndex === 0 && styles.activeTab]}>Today</Text>
+            <TextRegular style={[styles.tab, activeTabIndex === 0 && styles.activeTab]}>
+              Today
+            </TextRegular>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => setActiveTabIndex(1)}>
-            <Text style={[styles.tab, activeTabIndex === 1 && styles.activeTab]}>Tomorrow</Text>
+            <TextRegular style={[styles.tab, activeTabIndex === 1 && styles.activeTab]}>
+              Tomorrow
+            </TextRegular>
           </TouchableOpacity>
         </View>
         <Link href="/nextSevenDays">
           <View style={styles.sevenDays}>
-            <Text>Next 7 Days</Text>
+            <TextRegular>Next 7 Days</TextRegular>
             <RightArrowIcon />
           </View>
         </Link>

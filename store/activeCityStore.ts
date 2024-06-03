@@ -2,6 +2,8 @@ import { makeAutoObservable } from 'mobx';
 import { WeatherData } from '@/interfaces/weatherData';
 import { makePersistable } from 'mobx-persist-store';
 import { getStorageByPlatform } from '@/utils/getStorageByPlatform';
+import { CurrentLocationData } from '@/interfaces/currentLocationData';
+import { CityLocationData } from '@/interfaces/cityLocationData';
 
 class ActiveCityStore {
   currentLocation: CurrentLocationData | CityLocationData | null = null;

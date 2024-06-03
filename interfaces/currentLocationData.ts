@@ -1,4 +1,4 @@
-interface CurrentLocationData {
+export interface CurrentLocationData {
   city: string;
   country: string;
   ip: string;

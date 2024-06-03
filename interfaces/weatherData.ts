@@ -6,7 +6,7 @@ export interface WeatherData {
   dt: number;
   id: number;
   main: MainData;
-  name: String;
+  name: string;
   sys: SunData;
   timezone: number;
   visibility: number;

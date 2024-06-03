@@ -7,6 +7,7 @@ import { getGeoLocation } from '@/api/getGeoLocation';
 import RightArrowIcon from '@/components/icons/RightArrowIcon';
 import { countries } from 'country-data';
 import { useStore } from '../store';
+import { CityLocationData } from '@/interfaces/cityLocationData';
 
 export default function SearchScreen() {
   const [search, setSearch] = useState('');

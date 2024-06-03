@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
   sun: {
     height: 80,
     width: 50,
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   sunTime: {
     textAlign: 'center',
