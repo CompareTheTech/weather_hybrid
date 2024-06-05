@@ -4,11 +4,11 @@
     "slug": "weather_hybrid",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.webp",
+    "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/icon.webp",
+      "image": "./assets/images/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,9 +17,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/icon.webp",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.comparethetech.weather_hybrid"
     },
     "web": {
       "bundler": "metro",
@@ -28,6 +29,14 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "7144a397-39ab-40fc-b7e4-0eed9c9125fb"
+      }
+    }
   }
 }
