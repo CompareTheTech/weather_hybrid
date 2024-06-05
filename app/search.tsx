@@ -70,7 +70,7 @@ const CitiesList: FC<CitiesListProps> = ({ cities }) => {
 
   if (!cities.length) {
     return (
-      <View>
+      <View style={styles.noResult}>
         <Text>No result</Text>
       </View>
     );
@@ -151,5 +151,10 @@ const styles = StyleSheet.create({
   },
   cityName: {
     fontWeight: 'bold',
+  },
+  noResult: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });

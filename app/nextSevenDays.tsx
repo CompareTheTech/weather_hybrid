@@ -23,7 +23,7 @@ interface DayWeather {
   isTomorrow: boolean;
 }
 
-const SettingsScreen = observer(() => {
+const NextSevenDaysScreen = observer(() => {
   const { activeCity } = useStore();
   const [weather, setWeather] = useState<DayWeather[] | null>(null);
 
@@ -174,4 +174,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SettingsScreen;
+export default NextSevenDaysScreen;
