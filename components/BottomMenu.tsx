@@ -74,7 +74,7 @@ const Content = observer(({ activeTabIndex }: { activeTabIndex: number }) => {
         temperature_2m: hourlyWeather.hourly.temperature_2m[i],
         time,
         weathercode: hourlyWeather?.hourly.weathercode[i],
-        isCurrent: time.split(':')[0] === currentTime,
+        isCurrent: time.split(':')[0] === currentTime && activeTabIndex === 0,
       });
     }
     setCurrentTabHourlyWeather(weather);
