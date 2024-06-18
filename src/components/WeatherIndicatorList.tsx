@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { WeatherData } from '@/interfaces/weatherData';
 import { StyleSheet, View } from 'react-native';
-import { useStore } from '../store';
+import { useStore } from '@/store';
 import { transformWindByUnit } from '@/utils/transformWindByUnit';
 import WeatherIndicatorCard from '@/components/WeatherIndicatorCard';
 import AtmosphericPressureIcon from '@/components/icons/indicators/AtmosphericPressureIcon';

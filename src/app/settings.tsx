@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { Picker } from '@react-native-picker/picker';
-import { useStore } from '../store';
+import { useStore } from '@/store';
 import { observer } from 'mobx-react';
 import { TemperatureUnitEnum } from '@/enum/temperatureUnit.enum';
 import { WindSpeedUnitEnum } from '@/enum/windSpeedUnit.enum';
